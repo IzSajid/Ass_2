@@ -3,13 +3,21 @@
 /* ______________Base styles________________ */
 body{
     font-family: 'Poppins', sans-serif;
+    margin-top: 87px;
+    margin-bottom: 0px;
+}
+main{
     margin-left: 165px;
     margin-right:165px;
-    margin-top: 87px;
 }
 section{
     margin-bottom: 100px;
 }
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+  }
 h1{
     font-size: 52px;
 }
@@ -22,6 +30,9 @@ h3{
 h4{
     font-size: 24px;
 }
+small{
+    font-size: 14px;
+}
 /* __________________head_______________________ */
 header{
     display: flex;
@@ -29,13 +40,15 @@ header{
     justify-content: space-between;
     font-weight: 700;
     color: black;
+    margin-left: 165px;
+    margin-right:165px;
 }
 nav a{
     margin-right: 5px;
     margin-left: 5px;
 }
 /* _______________body________________ */
- /* intro */
+ /* _____intro______ */
  .intro{
      display: flex;
      margin-top: 80px;
@@ -62,4 +75,88 @@ nav a{
  .intro_img:hover img{
      transform: scale(1.1,1.1);
      transition: transform 0.3s ease-in-out;
+ }
+ /* ____Product Menu____ */
+ .products{
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,1fr);
+     row-gap: 30px;
+     column-gap: 30px;
+     padding-left: 32px;
+     padding-right: 32px;
+ }
+ .product{
+     padding: 15px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 10px;
+ }
+ .product:hover{
+     opacity: 0.7;
+ }
+ .product img{
+    display: block;
+ }
+ .rating{
+    color: gray;
+}
+.product .fas,.far{
+     font-size: 14px;
+     color: orange;   
+ }
+ .more_product{
+     text-decoration: none;
+     color:navy;
+     font-weight: 700;
+     text-align:right;
+     display: block;
+     margin-top: 50px;
+ }
+ .more_product:hover{
+     color:lightblue;
+ }
+ /* ________Boost________ */
+.boost{
+    display: flex;
+    background-color:navy;
+    color: white;
+    padding: 20px;  
+    border-radius: 10px;
+}
+.boost:hover img{
+    transform: rotate(360deg);
+    transition: transform 3s ease-in-out 0.5s;
+}
+.boost img{
+    width: 404px;
+    height: 270px;
+    display: block;
+    border-radius: 50px;
+}
+.boost article{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.boost article button{
+    background-color: white;
+    color: navy;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.boost article button:hover{
+    opacity: 0.5;
+}
+ /* _____Footer_______ */
+ footer{
+     background-color: #0A0826;
+     color: white;
+    text-align: center;
+    margin-bottom: 0%;
+ }
+ footer a{
+     color: white;
+     margin: 5px;
  }
