@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&family=Raleway&display=swap');
 
-/* Base styles */
+/* ______________Base styles________________ */
 body{
     font-family: 'Poppins', sans-serif;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 87px;
 }
+/* __________________head_______________________ */
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+nav a{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* _______________body________________ */
