@@ -154,7 +154,7 @@ nav a{
      background-color: #0A0826;
      color: white;
     text-align: center;
-    margin: 0%;
+    margin: 0;
  }
  footer a{
      color: white;
@@ -166,11 +166,11 @@ nav a{
     body{
         width: 100%;
     }
-    main , header{
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-   header, .intro {
+   header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   } 
+   .intro {
         display: grid;
         grid-template-rows: 1fr 1fr;
     }
@@ -183,7 +183,43 @@ nav a{
     .boost{
         display: flex;
         flex-direction: column;
-        width: 150%;
+        justify-content: center;
+        
+    }
+    .boost img{
+        width: 202px;
+        height: 135px;
+        display: block;
+        border-radius: 50px;
     }
     
+}
+/* Tablet display */
+@media only screen and (min-width:688px) and (max-width:992px){
+        body{
+            width: 100%;
+        }
+        header, .intro{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+       } 
+       .products{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .boost{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .boost img{
+        width: 300px;
+        height: 200px;
+        display: block;
+        border-radius: 50px;
+    }
+
+
 }
